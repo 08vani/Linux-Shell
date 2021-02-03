@@ -15,9 +15,6 @@ The parent process must wait for the child process to terminate, by using
 the system call waitpid(). The child process must call the exit() system call
 once its execution ends.
 
-You would require to refer to the manpages for various system calls men-
-tioned.
-
 
 Exercise 1.2: Basic Linux/Unix shell (Total points:
 50 ).
@@ -37,7 +34,7 @@ etc. External commands on the other hand relate to commands which are not
 handled directly by the shell program but by an external program. Common
 examples include ‘ls’, ‘cat’, ‘grep’ etc.
 
-Your task is to design your a simple shell that can handle five, internal com-
+Task is to design your a simple shell that can handle five, internal com-
 mands – ‘cd’, ‘echo’, ‘history’, ‘pwd’ and ‘exit’. These commands
 
 would be handled directly by the shell. Your shell should also be able to han-
