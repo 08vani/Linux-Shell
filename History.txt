@@ -1,0 +1,36 @@
+cd ~
+history
+exit
+exit
+cd ..
+mkdir vani
+cd ..
+mkdir vani
+ls
+cd ..
+mkdir vani
+ls
+rm vani
+rm vani
+ls
+rm demo
+
+cd ..
+cd Assignment_2_tem
+cd Assignment_2_temp
+mkdir demo12
+ls
+rm demo12
+ls
+cat exec.c input.c
+date
+exit
+exit
+cd fvc hjk
+exit
+exit
+exit --help
+exit
+exit --help
+exit gh
+exit 

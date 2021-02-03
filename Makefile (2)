@@ -1,0 +1,14 @@
+inal: Problem2
+
+Problem1: 
+	gcc Problem_1.c -o link3
+	./link3
+
+Problem2: 
+	gcc rm.c -o rm
+	gcc mkdir.c -o mkdir
+	gcc ls.c -o ls
+	gcc date.c -o date
+	gcc cat.c -o cat
+	gcc Problem_2.c -o link
+	./link

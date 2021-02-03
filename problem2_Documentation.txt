@@ -1,0 +1,104 @@
+I have written a basic level shell which supports the following commands :
+
+1. cd - This is a command to present working directory
+2. echo - This command to print user statements on shell
+3. pwd - This command dispaly the present working directory on shell
+4. history - This command display all the previous entered commands
+5. exit - This command close the shell.
+6. ls - To display the list of directories 
+7. rm - Tho remove a directory
+8. mkdir - To make a new directory
+9. date - To display the present date
+10.cat - To display the file content 
+
+Commands and Options that can be executed -
+
+1. cd 
+ a. cd.. - This is to go to one directory up
+ b. cd/ - This is to change to root directory
+ c. cddir1/dir2/dir3 - This command is used to go inside a perticular directory
+ d. cd~ or cd : This is used to change the home directory
+ e. cd[directory] - This is to change to a directory
+ f. cd-P - This is equal to cd/
+ g. cd-L - This is same as cd[directory]
+
+2. echo
+ a. echo[string]- It is used to print the past string on the shell
+ b. echo-E[string] - This command will disable all the backslashes
+ c. echo--help - This displays the basic information of the echo command
+
+3. pwd
+ a. pwd-L - This is used to display the symbolic path
+ b. pwd--help - This command is used to provide basic information of pwd
+
+4. history 
+ a. history-c - This is to erase all the history of the shell
+ b. history--help - This provides basic information of the history command
+
+5. exit
+ a. exit--help - This is used to basic information of exit command
+ 
+6. ls
+ a. ls-1 - It print every file in a new line
+ b. ls-i - It print the inode number
+ 
+7. rm
+ a. rm-i - It is to remove any file in interative mode
+ b. rm-v - It is to dispaly end message when all files are removed
+ 
+8. mkdir
+ a. mkdir-v - It is to display a message of sucess after the completion of making a directory
+ b. mkdir-i - It dispaly the message after the directory is made.
+ 
+9. date
+ a. date-u - It dispalys date in utf time
+ b. date-r filename - It displays the time when the file was last edited
+ 
+10 cat
+ a. cat-E - It display $ sign at the end of each line
+ b. cat-n filename - It give number to all the lines
+
+Error Handled
+ 1. cd 
+  a. If the parameter directory does not exist it will show an error
+  b. if you give illegal arguments then it shows an error
+ 
+2. echo
+  a. If you give illegal arguments it will show an error
+  b. If you give invalid option it will give an error
+
+3.pwd
+ a. If you pass invalid parameters it will show an error
+ b. If you pass invalid options it will show an error
+
+4. history
+ a. If you pass invalid options it will show an error
+ b. If you pass invalid parameters it will show an error
+ 
+5. Exit 
+ a. If you pass invalid parameters it will show an error
+ 
+6.ls
+ a. If you pass a directory that doesn't exist, it will give error
+ b. If you pass more than one file then it will give error
+
+7.rm 
+ a.If the directory doesn't exist then it will give error
+ b.If you pass invalid options it will show an error 
+8.mkdir
+  a.If any error occure in making a new directory then it will display error message
+  b.If you pass invalid options it will show an error 
+
+9.date
+ a.If the file doesn't exist then it will give error
+ b.If you pass invalid options it will show an error 
+
+10.cat
+ a. If the file doesn't exist then it will give error
+ b. If you pass invalid options it will show an error 
+
+Assupmtions
+
+1. Maximum 1000 arguments can be passed
+2. Maximum length of file name can be 1000 letter long
+3. Every command should be space separeted 
